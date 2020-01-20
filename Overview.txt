@@ -1,0 +1,9 @@
+Protein is the core class of our ontology. 7 subclasses arise from this: Structural, Storage, Transport, Catalytic, Regulatory, Signaling/receptor and Immunological/infectious.
+Protein class has the following relationships with other classes:
+	Protein hasLength LengthProperty
+	Protein isFromSpecies Species // Species hasProtein Protein
+	Protein isCodedByGene Gene // Gene codifiesProtein Protein
+	Protein isSameProteinAs Protein
+	Protein isInLocation CellularLocation // CellularLocation hasProteinLocated Protein
+	Protein isInvolvedIn Process // Process hasProteinInvolved Protein
+	Protein hasFunction Function // Function isHadByProtein Protein
